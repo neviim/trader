@@ -8,7 +8,7 @@ import json
 import sys
 
 ###
-# Altentica no banco redis.
+# Altenticação por senha no banco redis.
 def redis_connect() -> redis.client.Redis:
     try:
         client = redis.Redis(
@@ -25,8 +25,8 @@ def redis_connect() -> redis.client.Redis:
         print("AuthenticationError!")
         sys.exit(1)
 
-### Get vela
-#
+###
+# Get vela - simulando dados
 def getVela(id):
     time.sleep(2)
     return {
@@ -36,7 +36,7 @@ def getVela(id):
     }
 
 ###
-# Get catecoria
+# Get catecoria - simulando dados
 def getCategorias():
     time.sleep(2)
     return [
@@ -54,7 +54,6 @@ rc = redis_connect()
 
 @app.route('/', methods=['GET'])
 def index():
-
     if rc.get('dt') == None:
         rc.set('dt', str(datetime.now()), ex=3)
     return rc.get('dt')
