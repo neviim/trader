@@ -1,4 +1,9 @@
+.env
+
 iqoptionapi*
 talib*
 
 bermam.py
+redis-get*
+redis-cli*
+redis-fack*
