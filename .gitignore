@@ -7,3 +7,5 @@ bermam.py
 redis-get*
 redis-cli*
 redis-fack*
+
+**__pycache__
