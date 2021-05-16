@@ -1,5 +1,6 @@
 ### Trader - Arquivando as velas, API-Cache em redis
 
+[ ] Autenticar Uso da API 
 [x] Autenticar API no Redis
 [x] Get - Velas/id
 [x] Get - Categorias
