@@ -3,6 +3,7 @@ from decouple import config
 import redis
 import sys
 import json
+import time
 
 def redis_connect() -> redis.client.Redis:
     try:
@@ -20,8 +21,23 @@ def redis_connect() -> redis.client.Redis:
         print("AuthenticationError!")
         sys.exit(1)
 
-###
-# Adicionar dados ao restro
 rc = redis_connect()
 
+###
+# Adicionar dados para cache
 rc.set('binance_data', json.dumps({'EURUSD': 19876, 'Valor': 5000}))
+
+###
+# Semelhante a forma de cima
+rc.mset({'EURUSD': 5000, 'JAPUSD': 7000})
+# print(rc.get('EURUSD'))
+# print(rc.get('JAPUSD'))
+
+###
+# Grava cache de 1s, apos isso o apaga
+rc.psetex('EURUSD', 1000, 'Put')
+print(rc.get('EURUSD'))
+
+time.sleep(2)
+
+print(rc.get('EURUSD'))
