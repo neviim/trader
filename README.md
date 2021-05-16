@@ -38,4 +38,5 @@ http://127.0.0.1:5000
 http://127.0.0.1:5000/delete-key
 
 http://127.0.0.1:5000/velas/1
+http://127.0.0.1:5000/categorias
 ```
