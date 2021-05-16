@@ -23,6 +23,7 @@ pip install faker
 pip install faker_vehicle
 
 pip install python-binance
+pip install flask
 ```
 
 #### https://vscode.readthedocs.io/en/latest/editor/integrated-terminal/
