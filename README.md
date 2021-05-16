@@ -24,3 +24,5 @@ pip install faker_vehicle
 
 pip install python-binance
 ```
+
+#### https://vscode.readthedocs.io/en/latest/editor/integrated-terminal/
