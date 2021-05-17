@@ -1,10 +1,17 @@
 ### Trader - Arquivando as velas, API-Cache em redis
 
-[ ] Autenticar Uso da API 
+[ ] Autenticar Uso da API
 [x] Autenticar API no Redis
 [x] Get - Velas/id
 [x] Get - Categorias
 [x] Delete-key
+
+[ ] Tratando API Binance estraindo dados
+    [ ] todos os ultimos preços
+    [ ] Livro de Ordens
+    [ ] Preço medio
+    [ ] Pegando preços dointervalo de 1 dia
+    [ ] Transformando e tratando o json
 
 
 ### Usando Anaconda3 em caso de Windows
@@ -21,6 +28,7 @@ pip install faker
 pip install faker_vehicle
 
 pip install python-binance
+pip install pandas
 pip install flask
     # Setar a variavel de embinte
         # powershell: set FLASK_APP=app.py
