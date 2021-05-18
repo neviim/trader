@@ -1,5 +1,8 @@
 .env
 
+**sample_data
+**btc_df.json
+
 iqoptionapi*
 talib*
 

@@ -1,18 +1,23 @@
 ### Trader - Arquivando as velas, API-Cache em redis
 
+### Funções a fazer...
+
 [ ] Autenticar Uso da API
 [x] Autenticar API no Redis
 [x] Get - Velas/id
 [x] Get - Categorias
 [x] Delete-key
 
-[ ] Tratando API Binance estraindo dados
-    [ ] todos os ultimos preços
-    [ ] Livro de Ordens
-    [ ] Preço medio
-    [ ] Pegando preços dointervalo de 1 dia
-    [ ] Transformando e tratando o json
+[x] Tratando API Binance estraindo dados
+    [x] todos os ultimos preços
+    [x] Livro de Ordens
+    [x] Preço medio
+    [x] Pegando preços dointervalo de 1 dia
+    [x] Transformando e tratando o json
 
+[x] Pegar dados publicos abertos CMV
+    [x] Direto da extenção csv
+    [x] De dentro do arquivo zip
 
 ### Usando Anaconda3 em caso de Windows
 ```zsh
@@ -28,6 +33,7 @@ pip install faker
 pip install faker_vehicle
 
 pip install python-binance
+pip install bta-lib
 pip install pandas
 pip install flask
     # Setar a variavel de embinte
