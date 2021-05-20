@@ -1,7 +1,7 @@
 ### Trader - Arquivando as velas, API-Cache em redis
 
 ### Funções a fazer...
-
+```doc
 [ ] Autenticar Uso da API
 [x] Autenticar API no Redis
 [x] Get - Velas/id
@@ -18,6 +18,7 @@
 [x] Pegar dados publicos abertos CMV
     [x] Direto da extenção csv
     [x] De dentro do arquivo zip
+```
 
 ### Usando Anaconda3 em caso de Windows
 ```zsh
