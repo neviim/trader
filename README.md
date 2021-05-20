@@ -22,20 +22,31 @@
 ### Usando Anaconda3 em caso de Windows
 ```zsh
 # Usando anaconda3
+conda create -n py38mt4 python=3.8
 conda init powershell
 conda activate py38mt4
 ```
 
 ### Dependencias do python 3.8
 ```zsh
+# Executar dependencias listada
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+# Instalar
 pip install redis
 pip install faker
 pip install faker_vehicle
 
 pip install python-binance
+pip install nltk
+pip install twisted
 pip install bta-lib
 pip install pandas
 pip install flask
+
+pip install binance-api
+pip install asyncio
     # Setar a variavel de embinte
         # powershell: set FLASK_APP=app.py
         # bash: $env:FLASK_APP=app.py
@@ -55,6 +66,8 @@ docker-compose up -d
 
 ### Usando a API
 ```zsh
+flask run
+
 http://127.0.0.1:5000
 http://127.0.0.1:5000/delete-key
 
